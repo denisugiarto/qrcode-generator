@@ -7,6 +7,9 @@ const loading = document.querySelector('#loading');
 generateBtn.addEventListener('click', async () => {
   const qrCode = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${input.value}`;
   const response = await fetch(qrImage.src);
+  if (input.value === '') {
+    alert('Please fill the input!');
+  }
   if (qrImage.src === qrCode) return;
   qrImage.src = '';
   loading.classList.toggle('hide');
