@@ -1,0 +1,21 @@
+body {
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main {
+    padding: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.hide {
+    display: none;
+}
